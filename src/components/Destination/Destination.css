@@ -1,0 +1,57 @@
+.search{
+    background-color: coral;
+    color: cornsilk;
+    width: 200px;
+}
+.search-box{
+background-color: gainsboro;
+border-radius: 6px;
+width: 32%;
+/* height: 200px; */
+margin-top: 5%;
+padding-top: 5%;
+padding-left: 6%;
+padding-bottom: 7%;
+float: left;
+margin-right: 50px;
+}
+.map-space{
+    padding-top: 4%;
+    margin-left: 18px;
+}
+.search-box input{
+    margin:6px 2px;
+    padding: 5px 2px;
+    border-radius: 8px;
+}
+.search-box label{
+  font-weight: bolder;
+}
+.vehicle-info{
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    height: 68px;
+    width: 204px;
+}
+.info{
+    margin-top: 20px;
+    display: flex;
+}
+.single-info{
+    padding-left: 17px;
+    padding-right: 10px;
+    padding-top: 22px;
+    width: 66px;
+}
+@media (max-width: 760px){
+    .search-box{
+        width: 100%;
+    }
+    .map-space{
+        width: 20%;
+    }
+    .map-space map{
+        width: 50%;
+    }
+  }

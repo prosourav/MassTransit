@@ -1,0 +1,18 @@
+.home{
+    background-image: url(../../photos/Bg.png);
+   background-position: center;
+   height: 46rem;
+   background-repeat: no-repeat;
+   width: 100%;
+   padding: 0;
+   margin-top:0;
+}
+
+@media (max-width: 760px){
+    .home{
+        /* background-image:cross-fade() */
+        background-size:cover;
+        height: 90em;
+        padding-left: 9%;
+    }
+  }

@@ -1,0 +1,35 @@
+[
+    {
+      "_id": "6054961450d282be2174ca68",
+      "index": 0,
+      "name": "Bike",
+      "price":34,
+      "seat":1,
+      "img":"https://th.bing.com/th/id/OIP.8FjRYqyZOuv81VIPBSomAgHaE7?w=280&h=186&c=7&o=5&pid=1.7"
+    },
+    {
+      "_id": "605496141c305a41e196dfe6",
+      "index": 1,
+      "name": "Car",
+      "price":90,
+      "seat":4,
+      "img":"https://th.bing.com/th/id/OIP.V9yat6aiWIUb8VrLkC0xGAHaEo?w=241&h=180&c=7&o=5&pid=1.7"
+    },
+    
+    {
+      "_id": "605496148612ba3419399828",
+      "index": 2,
+      "name": "Bus",
+      "price":38,
+      "seat":4,
+      "img":"https://th.bing.com/th/id/OIP.K0RH8NWnRFPyyK3xfKYaKgHaFj?w=236&h=180&c=7&o=5&pid=1.7"
+    },
+    {
+      "_id": "605496147e7b410db371458a",
+      "index": 3,
+      "name": "Train",
+      "price":24,
+      "seat":4,
+      "img":"https://th.bing.com/th/id/OIP.GPdBa2nVaPsgLWq9rGAucAHaE8?w=253&h=180&c=7&o=5&pid=1.7"
+    }
+  ]

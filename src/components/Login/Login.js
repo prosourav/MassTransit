@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../App';
-// import firebaseConfig from '../../firebase.config';
 import EmailLogin from '../EmailLogin/EmailLogin';
 import firebase from "firebase/app";
 import Header from '../Header/Header';
@@ -25,11 +24,11 @@ const Login = () => {
           setLoggedInUser(logInUser);
           history.replace(from);
         }).catch((error) => {
-          const errorCode = error.code;
+          // const errorCode = error.code;
           const errorMessage = error.message;
           const logInUser = {isSignedIn:false,error:errorMessage,message:''}
           setLoggedInUser(logInUser);
-          console.log("error",errorCode,errorMessage)
+
         });
     }
     return (

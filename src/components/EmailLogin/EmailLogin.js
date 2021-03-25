@@ -40,7 +40,6 @@ const EmailLogin = () => {
       newUser.isSignedIn = true;
       setSignInUser(newUser);
     }
-    console.log("signin user",signInUser);
   }
   
   const handleSubmit= (event) =>{
@@ -48,14 +47,14 @@ const EmailLogin = () => {
 console.log("checking:",signInUser.email,signInUser.password);
     firebase.auth().createUserWithEmailAndPassword(signInUser.email, signInUser.password)
     .then((userCredential) => {
-      const user = userCredential.user;
+      // const user = userCredential.user;
       const newUser = {...signInUser}
       newUser.isRegistered=true;
       newUser.success="Registration successFull";
       newUser.error = "";
       setSignInUser(newUser);
       updateUserName(signInUser.name);
-console.log("reg",user);
+
     })
     .catch((error) => {
       const errorMessage = error.message;
@@ -64,9 +63,9 @@ console.log("reg",user);
       newUser.success="";
       newUser.error=errorMessage;
       setSignInUser(newUser);
-      // console.log(errorCode,errorMessage);
+  
     });
-    // event.preventDefault();
+  
    }
 
    if (signInUser.oldUser && signInUser.email && signInUser.password) {
@@ -81,8 +80,6 @@ console.log("reg",user);
         logInUser.success = " Login successFull";
         logInUser.isLoggedIn=true;
         setLoggedInUser(logInUser);
-        console.log("login Successfull");
-        console.log(user3);
 
         history.replace(from);
       })
@@ -94,7 +91,6 @@ console.log("reg",user);
           error:errorMessage,
           isLoggedIn:false
         }
-        console.log(errorMessage);
         setLoggedInUser(logInUser);
       });
   

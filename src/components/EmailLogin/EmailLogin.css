@@ -1,18 +1,33 @@
 .form{
     text-align: center;
-    width: 500px;
-    height: 350px;
-    border: 2px solid black;
-    margin: 5% auto;
+    width: 50%;
+    height: 420px;
+    border-radius: 36px;
+    margin: 2% auto;
     padding-top: 30px;
+    background-color: #fff8f0;
 }
 .form input{  
-    width: 260px;   
+    width: 260px;  
+    border-radius: 6px; 
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;  
+}
+.user-input{ border-bottom: 3px solid black;
 }
 .submit{
-    background-color:rgb(100, 255, 70);
+    background-color:rgb(39, 160, 15);
     color: whitesmoke;
     border-radius: 5px;
     font-weight: bolder;
     padding: 8px 0px;
 }
+
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  @media (max-width: 760px){
+    .form{width: 100%};
+  }

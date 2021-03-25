@@ -37,13 +37,12 @@ const Login = () => {
         <Header></Header>
         <hr/>
            <EmailLogin></EmailLogin>
-           <div style={{textAlign:"center"}}>
-           <small>Already have an account? <span>Sign In</span></small>
-       <br/>
-       <p>or</p>
-       <div>
+           <div style={{textAlign:"center"}}>  
+       <h3>or</h3>
+       <h6>You Can Continue With Google</h6>
+       <div className="G-sign">
           
-       <h4 className="option" onClick={handleGoogleLogin}>   <FontAwesomeIcon icon={faGoogle} /> &nbsp; Continue with Google</h4>
+       <h4 style={{color:"whitesmoke",backgroundColor:"#25206c"}} className="option" onClick={handleGoogleLogin}>   <FontAwesomeIcon icon={faGoogle} /> &nbsp; Continue with Google</h4>
         
        </div>
         </div>

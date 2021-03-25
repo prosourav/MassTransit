@@ -6,6 +6,7 @@ import './Header.css';
 
 const Home = () => {
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+  console.log(setLoggedInUser);
   const history = useHistory();
   const handleOnClick = () =>{
     const url = "/login";

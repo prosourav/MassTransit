@@ -28,7 +28,7 @@ const Login = () => {
           const errorMessage = error.message;
           const logInUser = {isSignedIn:false,error:errorMessage,message:''}
           setLoggedInUser(logInUser);
-
+          console.log(loggedInUser);
         });
     }
     return (

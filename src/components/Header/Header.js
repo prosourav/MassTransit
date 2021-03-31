@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { UserContext } from '../../App';
 import './Header.css';
 
-const Home = () => {
+const Header = () => {
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
   console.log(setLoggedInUser);
   const history = useHistory();
@@ -31,4 +31,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Header;
